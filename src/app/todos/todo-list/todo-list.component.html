@@ -1,3 +1,7 @@
-<div class="todo-list" >  <!-- *ngIf="todos.length" -->
+<!-- <div class="todo-list" >  (*ngIf="todos.length")
   <app-todo-item *ngFor="let todo of todos" [todo]="todo" (delete)="onDelete($event)" (toggle)="onToggle($event)"></app-todo-item>
-</div>
+</div> -->
+
+<mat-list class="todo-list">
+  <app-todo-item *ngFor="let todo of todos" [todo]="todo" (delete)="onDelete($event)" (toggle)="onToggle($event)"></app-todo-item>
+</mat-list>

@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MaterialModule } from "./material";
 
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
@@ -24,6 +26,8 @@ import { TodoItemComponent } from './todos/todo-item/todo-item.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.

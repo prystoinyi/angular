@@ -1,4 +1,4 @@
-<div class="todo-item" [class.completed]="todo.completed">
+<!-- <div class="todo-item" [class.completed]="todo.completed">
   <button class="checkbox icon" (click)="onToggle()">
     <i class="material-icons">{{todo.completed ? 'check_box' : 'check_box_outline_blank'}}</i>
   </button>
@@ -8,4 +8,14 @@
       <i class="material-icons">delete</i>
     </button>
   </div>
-</div>
+</div> -->
+
+<mat-list-item class="todo-item" [class.completed]="todo.completed">
+  <mat-checkbox (click)="onToggle()"><span class="title">{{todo.title}}</span></mat-checkbox>
+  <div class="actions">
+    <button class="delete icon" (click)="onDelete()">
+      <i class="material-icons">delete</i>
+    </button>
+  </div>
+</mat-list-item>
+<mat-divider></mat-divider>

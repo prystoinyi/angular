@@ -1,14 +1,14 @@
 export const todos = [
     {
       title: 'Изучить JavaScript',
-      completed: true
+      completed: false
     },
     {
       title: 'Изучить Angular 2',
-      completed: false
+      completed: true
     },
     {
       title: 'Написать приложение',
-      completed: false
+      completed: true
     },
   ];

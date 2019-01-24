@@ -10,7 +10,7 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 1,
         title: 'Изучить JavaScript',
-        completed: true
+        completed: false
       },
       {
         id: 2,
